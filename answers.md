@@ -18,6 +18,6 @@ Fixed qsort implementation seems to perform better with the highest n values at 
 
 
 - **1c.**
-Timsort is the most efficient. Timsort has an asymptotic runtime of O(nlogn), which is faster than the runtimes of quicksort has an asymptotic runtime of O(n^2)
+Timsort is the most efficient. Timsort has an asymptotic runtime of O(nlogn), which is faster than the runtimes of quicksort which has an asymptotic runtime of O(n^2). Also, according to the chart, Timsort had a runtime of 28.624 miliseconds at a list size of 100000, which was significantly smaller than the runtimes of the other sort functions, which were all in the hundreds of miliseconds.
 
 ![Alt text](image.png)

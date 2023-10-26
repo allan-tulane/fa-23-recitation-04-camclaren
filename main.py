@@ -28,6 +28,7 @@ def random_pivot(a):
 #         L[0], L[m] = L[m], L[0]
 #         return ssort(L[1:])
 
+# the selection sort would not work with the time_search function (kept outputting infinitely)
 def ssort(L):
     for i in range(len(L)):
         print(L)
@@ -82,7 +83,8 @@ def compare_sort(sizes=[100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000, 10
             len(mylist),
             time_search(qsort_fixed_pivot, mylist),
             time_search(qsort_random_pivot, mylist),
-            time_search(ssort, mylist),
+        # time_search for selection sort was not working; infinite output led to crashing
+            # time_search(ssort, mylist),
             time_search(tim_sort, mylist),
         ])
     return result
